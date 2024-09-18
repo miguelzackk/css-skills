@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 100px;    
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: white;
+}
+
+button:focus {
+    border: 4px solid green;
+    outline: 5px solid red;
+    outline-color: blue;
+}
+
+button:active {
+    background-color: red;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+div :last-child {
+    background-color: brown;
+}
+
+div :nth-child(even) {
+    background-color: chartreuse;
+}
+
+div :nth-child(odd) {
+    background-color: coral;
+}
+
+div :first-child {
+    background-color: aqua;
+}
